@@ -29,3 +29,9 @@ Route::middleware('auth')
         Route::get('/', 'HomeController@index')
             ->name('home');
     });
+
+
+// Guest Routes - Fallback (all routes)
+Route::get('{any?}', function () {
+    return view('guest.home');
+})->where('any', '.*');
