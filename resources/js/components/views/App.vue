@@ -1,4 +1,5 @@
 <template>
+  <!-- layout delle pagine su cui andrà vue  -->
   <h1>{{ title }}</h1>
 </template>
 
