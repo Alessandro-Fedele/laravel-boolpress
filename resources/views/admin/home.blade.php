@@ -14,7 +14,7 @@
                     </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    Ancora nessun Post
                 </div>
             </div>
         </div>
