@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 // Admin Routes
@@ -36,4 +32,4 @@ Route::middleware('auth')
 // Guest Routes - Fallback (all routes)
 Route::get('{any?}', function () {
     return view('guest.home');
-})->where('any', '.*');
+})->where('any', '.*')->name('home');

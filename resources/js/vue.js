@@ -2,7 +2,7 @@ window.Vue = require('vue');
 
 import Vue from "vue";
 
-Vue.component('app', require('./components/views/App.vue').default);
+// Vue.component('app', require('./components/views/App.vue').default);
 
 import App from "./components/App.vue";
 

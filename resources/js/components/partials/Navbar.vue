@@ -1,0 +1,28 @@
+<template>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="/">Laravel Blog</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss">
+nav a {
+  color: white !important;
+}
+</style>
