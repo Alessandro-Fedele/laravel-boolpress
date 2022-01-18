@@ -16,8 +16,22 @@
                     </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    @if(count($posts) === 0)
+                    Ancora nessun post!
+                    @else
+                    @foreach ($posts as $post)
+                    <div class="card mt-4">
+                        <h2> {{$post->title}}</a></h2>
+                        <p>{{$post->body}}</p>
+                        <!-- Modifica -->
+                        <!-- Cancella -->
+                    </div>
+                    @endforeach
+                    @endif
                 </div>
+                <a href="{{route('admin.posts.create')}}" class="btn btn-link">
+                    Crea un post
+                </a>
             </div>
         </div>
     </div>
