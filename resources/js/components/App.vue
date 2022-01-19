@@ -1,6 +1,6 @@
 <template>
   <!-- layout delle pagine su cui andrà vue  -->
-  <div>
+  <div class="d-flex flex-column">
     <Navbar style="background-image: url('img/home-bg.jpg')"> </Navbar>
 
     <!-- MAIN -->
@@ -40,4 +40,11 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 50px;
+}
 </style>
