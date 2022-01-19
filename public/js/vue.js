@@ -115,6 +115,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -125,8 +128,16 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      title: "Vue page"
+      title: "Vue page",
+      postsList: []
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    window.axios.get("/api/posts").then(function (resp) {
+      _this.postsList = resp.data;
+    });
   }
 });
 
@@ -1327,27 +1338,33 @@ var render = function () {
         staticStyle: { "background-image": "url('img/home-bg.jpg')" },
       }),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c(
+            "div",
+            { staticClass: "col-md-10 col-lg-8 col-xl-7" },
+            _vm._l(_vm.postsList, function (post) {
+              return _c(
+                "div",
+                { key: post.id, staticClass: "card mt-4 mb-5" },
+                [
+                  _c("h2", [_vm._v(_vm._s(post.title))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(post.body))]),
+                ]
+              )
+            }),
+            0
+          ),
+        ]),
+      ]),
       _vm._v(" "),
       _c("Footer"),
     ],
     1
   )
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container px-4 px-lg-5" }, [
-      _c("div", { staticClass: "row gx-4 gx-lg-5 justify-content-center" }, [
-        _c("div", { staticClass: "col-md-10 col-lg-8 col-xl-7" }, [
-          _vm._v("\n        Ancora nessun dato disponibile\n      "),
-        ]),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -13873,7 +13890,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App.vue */ "./resources/js/components/App.vue");
+/* harmony import */ var _components_App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/App.vue */ "./resources/js/components/App.vue");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
  // Vue.component('app', require('./components/views/App.vue').default);
 
@@ -13881,7 +13898,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   render: function render(h) {
-    return h(_components_App_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
+    return h(_components_App_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
   }
 }); // Quando uso la function render nel div padre metterà quello che ci sarà nella funzione render
 // e cancellerà tutto quello che già c'è. In questo caso metterà h(App) in guest.home dove è importato vue e dove c'è il div #app,

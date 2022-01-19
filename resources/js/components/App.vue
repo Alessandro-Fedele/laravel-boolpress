@@ -4,10 +4,13 @@
     <Navbar style="background-image: url('img/home-bg.jpg')"> </Navbar>
 
     <!-- MAIN -->
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
-          Ancora nessun dato disponibile
+          <div v-for="post in postsList" :key="post.id" class="card mt-4 mb-5">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.body }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -25,7 +28,13 @@ export default {
   data() {
     return {
       title: "Vue page",
+      postsList: [],
     };
+  },
+  mounted() {
+    window.axios.get("/api/posts").then((resp) => {
+      this.postsList = resp.data;
+    });
   },
 };
 </script>
