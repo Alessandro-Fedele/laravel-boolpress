@@ -14,17 +14,12 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Immagine</label>
-                    <input type="text" class="form-control" id="image" name="image" value="{{ $post->image }}">
+                    <input type="url" class="form-control" id="image" name="image" value="{{ $post->image }}" placeholder="Change URL... ">
                 </div>
 
                 <div class="mb-3">
                     <label for="body" class="form-label">Contenuto</label>
                     <textarea class="form-control" id="body" name="body" rows="3">{{ $post->body }}</textarea>
-                </div>
-
-                <div class="mb-3">
-                    <label for="author" class="form-label">Autore</label>
-                    <input type="text" class="form-control" id="author" name="author" value="{{ $post->author }}">
                 </div>
 
                 <div class="text-center">

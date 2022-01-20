@@ -8,22 +8,17 @@
                 @csrf
                 <div class="mb-3">
                     <label for="title" class="form-label">Titolo</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" class="form-control" id="title" name="title" value="{{old('title')}}" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Immagine</label>
-                    <input type="text" class="form-control" id="image" name="image">
+                    <input type="url" class="form-control" id="image" name="image" placeholder="Add URL... " value="{{old('image')}}" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="body" class="form-label">Contenuto</label>
-                    <textarea class="form-control" id="body" name="body" rows="3"></textarea>
-                </div>
-
-                <div class="mb-3">
-                    <label for="user_id" class="form-label">Autore</label>
-                    <input type="text" class="form-control" id="user_id" name="user_id">
+                    <textarea class="form-control" id="body" name="body" rows="3" value="{{old('body')}}" required></textarea>
                 </div>
 
                 <div class="text-center">
