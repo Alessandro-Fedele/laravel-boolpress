@@ -18,6 +18,15 @@
                 </div>
 
                 <div class="mb-3">
+                    <label class="form-label">Categoria</label>
+                    <select name="category_id" id="category_id" class="form-control">
+                        @foreach($categories as $category)
+                        <option value="{{$category->id}}" @if($category->id === $post->category_id) selected @endif>{{$category->name}}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="mb-3">
                     <label for="body" class="form-label">Contenuto</label>
                     <textarea class="form-control" id="body" name="body" rows="3">{{ $post->body }}</textarea>
                 </div>
