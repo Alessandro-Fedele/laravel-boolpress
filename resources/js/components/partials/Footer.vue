@@ -17,5 +17,9 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss">
+footer {
+  background-color: rgba(202, 178, 135, 0.842);
+  backdrop-filter: blur(6px);
+}
 </style>

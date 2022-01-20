@@ -4,12 +4,18 @@
     <Navbar style="background-image: url('img/home-bg.jpg')"> </Navbar>
 
     <!-- MAIN -->
-    <div class="container">
+    <div class="container mb-5">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
           <div v-for="post in postsList" :key="post.id" class="card mt-4 mb-5">
             <h2>{{ post.title }}</h2>
+            <img :src="post.image" :alt="post.title" />
             <p>{{ post.body }}</p>
+            <div>
+              <small>
+                {{ post.created_at }} Written by {{ post.user_id }}
+              </small>
+            </div>
           </div>
         </div>
       </div>
