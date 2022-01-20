@@ -23,6 +23,9 @@
                     <div class="card mt-4">
                         <h2><a href="{{route('admin.posts.show', $post->id)}}"> {{$post->title}}</a></h2>
                         <p>{{$post->body}}</p>
+                        <div>
+                            <small>{{$post->created_at}} Written by {{$post->user->name}}</small>
+                        </div>
                         <!-- Modifica -->
                         <a class="btn btn-primary m-3" href="{{ route('admin.posts.edit', $post->id) }}">Modifica</a>
                         <!-- Cancella -->

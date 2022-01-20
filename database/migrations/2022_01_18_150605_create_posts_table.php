@@ -18,7 +18,11 @@ class CreatePostsTable extends Migration
             $table->string('image')->nullable();
             $table->string('title', 100);
             $table->text('body');
-            $table->string('author', 50);
+
+            // autore è una foreign key
+            $table->foreignId('user_id')
+                ->constrained();
+
             $table->timestamps();
         });
     }
