@@ -8,7 +8,7 @@ use App\Post;
 class PostController extends Controller
 {
     // PostConstroller pubblico per leggere i dati
-    function index()
+    public function index()
     {
         $postsList = Post::all();
         return $postsList;
