@@ -11,9 +11,10 @@
             <h2>{{ post.title }}</h2>
             <img :src="post.image" :alt="post.title" />
             <p>{{ post.body }}</p>
+            <p>Categoria: {{ post.category.name }}</p>
             <div>
               <small>
-                {{ post.created_at }} Written by {{ post.user_id }}
+                {{ post.created_at }} Written by {{ post.user.name }}
               </small>
             </div>
           </div>

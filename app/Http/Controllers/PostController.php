@@ -10,7 +10,8 @@ class PostController extends Controller
     // PostConstroller pubblico per leggere i dati
     public function index()
     {
-        $postsList = Post::all();
+        // così faccio caricare a vue anche i dati delle foreign key "category" e "user"
+        $postsList = Post::with('category')->with('user')->get();
         return $postsList;
     }
 }
