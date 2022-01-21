@@ -27,6 +27,16 @@
                 </div>
 
                 <div class="mb-3">
+                    <label class="form-label">Tag</label>
+                    <!-- parentesi quadre così gli id scelti verranno mandati al server come array -->
+                    <select name="tags[]" id="tags" class="form-control selectpicker" multiple>
+                        @foreach($tags as $tag)
+                        <option value="{{$category->id}}">{{$tag->name}}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="mb-3">
                     <label for="body" class="form-label">Contenuto</label>
                     <textarea class="form-control" id="body" name="body" rows="3">{{ $post->body }}</textarea>
                 </div>

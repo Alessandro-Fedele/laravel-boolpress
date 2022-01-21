@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Category;
+use App\Tag;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Post;
@@ -29,7 +30,12 @@ class PostController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin.posts.create', compact('categories'));
+        $tags = Tag::all();
+
+        return view('admin.posts.create', [
+            "categories" => $categories,
+            "tags" => $tags
+        ]);
     }
 
     /**
@@ -67,9 +73,12 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         $categories = Category::all();
+        $tags = Tag::all();
+
         return view('admin.posts.edit', [
             "post" => $post,
-            "categories" => $categories
+            "categories" => $categories,
+            "tags" => $tags
         ]);
     }
 
@@ -84,6 +93,10 @@ class PostController extends Controller
     {
         $data = $request->all();
         $post->update($data);
+
+        // sync cancella in automatico i tag che già esistono e mette quelli nuovi
+        $post->tags()->sync($data["tags"]);
+
         return redirect()->route('admin.posts.show', $post->id);
     }
 
