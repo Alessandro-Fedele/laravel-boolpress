@@ -31,10 +31,10 @@
                     <!-- parentesi quadre così gli id scelti verranno mandati al server come array -->
                     <select name="tags[]" class="form-control" multiple>
                         @foreach($tags as $tag)
-                        @php
+                        <!-- @php
                         $exists = $post->tags->where("id", $tag->id)->count();
-                        @endphp
-                        <option value="{{$tag->id}}" @if ($exists) selected @endif>{{$tag->name}}</option>
+                        @endphp -->
+                        <option value="{{$tag->id}}" @if ($post->tags->contains($tag)) selected @endif>{{$tag->name}}</option>
                         @endforeach
                     </select>
                 </div>
