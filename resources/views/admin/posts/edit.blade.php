@@ -29,9 +29,12 @@
                 <div class="mb-3">
                     <label class="form-label">Tag</label>
                     <!-- parentesi quadre così gli id scelti verranno mandati al server come array -->
-                    <select name="tags[]" id="tags" class="form-control selectpicker" multiple>
+                    <select name="tags[]" class="form-control" multiple>
                         @foreach($tags as $tag)
-                        <option value="{{$category->id}}">{{$tag->name}}</option>
+                        @php
+                        $exists = $post->tags->where("id", $tag->id)->count();
+                        @endphp
+                        <option value="{{$tag->id}}" @if ($exists) selected @endif>{{$tag->name}}</option>
                         @endforeach
                     </select>
                 </div>

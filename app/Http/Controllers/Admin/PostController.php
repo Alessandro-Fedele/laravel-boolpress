@@ -46,10 +46,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->all();
+
         $post = new Post();
         $post->fill($request->all());
         $post->user_id = Auth::user()->id;
+
         $post->save();
+
+        $post->tags()->sync($data["tags"]);
+
         return redirect()->route("admin.posts.index");
     }
 

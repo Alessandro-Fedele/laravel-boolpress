@@ -30,6 +30,12 @@
                         <img src="{{$post->image}}" alt="{{$post->title}}">
                         <p>{{$post->body}}</p>
                         <p>Categoria: {{$post->category->name}}</p>
+                        <!-- tags -->
+                        <p>Tag:
+                            @foreach($post->tags as $tag)
+                            <span class="badge bg-primary text-white w-25">{{$tag->name}}</span>
+                            @endforeach
+                        </p>
                         <div>
                             <small>{{$post->created_at}} Written by {{$post->user->name}}</small>
                         </div>
