@@ -12,6 +12,15 @@
             <img :src="post.image" :alt="post.title" />
             <p>{{ post.body }}</p>
             <p>Categoria: {{ post.category.name }}</p>
+            <p>
+              Tag:
+              <span
+                v-for="tag in post.tags"
+                :key="tag.id"
+                class="badge bg-primary text-white w-25 mr-2"
+                >{{ tag.name }}</span
+              >
+            </p>
             <div>
               <small>
                 {{ post.created_at }} Written by {{ post.user.name }}
