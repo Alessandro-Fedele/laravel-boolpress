@@ -29,6 +29,37 @@
           </div>
         </div>
       </div>
+      <!-- PAGINATION -->
+      <div class="row">
+        <div class="col justify-content-center d-flex">
+          <nav>
+            <ul class="pagination">
+              <li>
+                <button class="page-link" @click="postData(currentPage - 1)">
+                  Indietro
+                </button>
+              </li>
+
+              <li
+                v-for="page of lastPage"
+                :key="page"
+                class="page-item"
+                :class="{ active: currentPage === page }"
+              >
+                <button class="page-link" @click="postData(page)">
+                  {{ page }}
+                </button>
+              </li>
+
+              <li>
+                <button class="page-link" @click="postData(currentPage + 1)">
+                  Avanti
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
 
     <Footer></Footer>
@@ -45,12 +76,31 @@ export default {
     return {
       title: "Vue page",
       postsList: [],
+      currentPage: 1,
+      lastPage: null,
     };
   },
+  methods: {
+    postData(page = 1) {
+      window.axios.get("/api/posts?page=" + page).then((resp) => {
+        this.postsList = resp.data.data;
+        this.currentPage = resp.data.current_page;
+        this.lastPage = resp.data.last_page;
+      });
+    },
+  },
   mounted() {
-    window.axios.get("/api/posts").then((resp) => {
-      this.postsList = resp.data;
-    });
+    // window.axios.get("/api/posts").then((resp) => {
+    //   this.postsList = resp.data.data;
+    //   this.currentPage = resp.data.current_page;
+    //   this.lastPage = resp.data.last_page;
+    // });
+    this.postData();
+  },
+  computed: {
+    formatDate() {
+      // return window.dayjs(this.post.created_at).format("DD/MM/YYYY HH:mm");
+    },
   },
 };
 </script>
