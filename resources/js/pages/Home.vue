@@ -1,14 +1,13 @@
 <template>
-  <!-- layout delle pagine su cui andrà vue  -->
-  <div class="d-flex flex-column">
-    <Navbar style="background-image: url('img/home-bg.jpg')"> </Navbar>
-
+  <div>
     <!-- MAIN -->
     <div class="container mb-5">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
           <div v-for="post in postsList" :key="post.id" class="card mt-4 mb-5">
-            <h2>{{ post.title }}</h2>
+            <router-link :to="{ name: 'posts.show', params: { id: post.id } }">
+              <h2>{{ post.title }}</h2>
+            </router-link>
             <img :src="post.image" :alt="post.title" />
             <p>{{ post.body }}</p>
             <p>Categoria: {{ post.category.name }}</p>
@@ -61,17 +60,10 @@
         </div>
       </div>
     </div>
-
-    <Footer></Footer>
   </div>
 </template>
-
 <script>
-import Navbar from "./partials/Navbar.vue";
-import Footer from "./partials/Footer.vue";
 export default {
-  name: "App",
-  components: { Navbar, Footer },
   data() {
     return {
       title: "Vue page",
@@ -97,20 +89,7 @@ export default {
     // });
     this.postData();
   },
-  computed: {
-    formatDate() {
-      // return window.dayjs(this.post.created_at).format("DD/MM/YYYY HH:mm");
-    },
-  },
 };
 </script>
-
-<style lang="scss">
-body {
-  min-height: 100vh;
-}
-
-footer {
-  min-height: 50px;
-}
+<style lang="sass">
 </style>

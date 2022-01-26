@@ -4,10 +4,12 @@ import Vue from "vue";
 
 // Vue.component('app', require('./components/views/App.vue').default);
 
-import App from "./components/App.vue";
+import App from "./App.vue";
+import router from "./router.js";
 
 const app = new Vue({
     el: '#app',
+    router,
     render: h => h(App)
 });
 
