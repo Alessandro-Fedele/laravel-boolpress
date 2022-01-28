@@ -11,7 +11,7 @@ class PostController extends Controller
     public function index()
     {
         // così faccio caricare a vue anche i dati delle foreign key "category" e "user"
-        $postsList = Post::with('category')->with('user')->with('tags')->paginate(2);
+        $postsList = Post::with('category')->with('user')->with('tags')->paginate(4);
 
         // uguale a return response()->json($postsList);
         return $postsList;

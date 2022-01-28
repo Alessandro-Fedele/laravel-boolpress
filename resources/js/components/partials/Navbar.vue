@@ -33,4 +33,11 @@ export default {};
 nav a {
   color: white !important;
 }
+
+li {
+  .router-link-exact-active {
+    color: rgb(20, 109, 20) !important;
+    background-color: white;
+  }
+}
 </style>

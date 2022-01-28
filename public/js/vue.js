@@ -477,7 +477,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "nav a {\n  color: white !important;\n}", ""]);
+exports.push([module.i, "nav a {\n  color: white !important;\n}\nli .router-link-exact-active {\n  color: #146d14 !important;\n  background-color: white;\n}", ""]);
 
 // exports
 
