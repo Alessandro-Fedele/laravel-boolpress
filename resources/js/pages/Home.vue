@@ -34,16 +34,13 @@
             <h5>Categorie:</h5>
             <ul class="linksList">
               <li v-for="category of categoriesList" :key="category.id">
-                <router-link to="/">{{ category.name }}</router-link>
-              </li>
-            </ul>
-          </div>
-          <!-- Tags -->
-          <div>
-            <h5>Tags:</h5>
-            <ul class="linksList">
-              <li v-for="tag of tagsList" :key="tag.id">
-                <router-link to="/">{{ tag.name }}</router-link>
+                <router-link
+                  :to="{
+                    name: 'category.show',
+                    params: { category: category.id },
+                  }"
+                  >{{ category.name }}</router-link
+                >
               </li>
             </ul>
           </div>
@@ -97,11 +94,21 @@ export default {
   },
   methods: {
     postData(page = 1) {
-      window.axios.get("/api/posts?page=" + page).then((resp) => {
-        this.postsList = resp.data.data;
-        this.currentPage = resp.data.current_page;
-        this.lastPage = resp.data.last_page;
-      });
+      // leggo la categoria scelta
+      const category = this.$route.query.category;
+
+      window.axios
+        .get("/api/posts", {
+          params: {
+            page,
+            category,
+          },
+        })
+        .then((resp) => {
+          this.postsList = resp.data.data;
+          this.currentPage = resp.data.current_page;
+          this.lastPage = resp.data.last_page;
+        });
     },
     getCategories() {
       window.axios.get("api/categories").then((resp) => {

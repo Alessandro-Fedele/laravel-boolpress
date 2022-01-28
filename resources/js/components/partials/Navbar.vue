@@ -10,6 +10,11 @@
             >
           </li>
           <li class="nav-item">
+            <router-link class="nav-link px-lg-3 py-3 py-lg-4" to="/posts"
+              >Posts</router-link
+            >
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link px-lg-3 py-3 py-lg-4" to="/about"
               >Chi siamo</router-link
             >
@@ -34,7 +39,7 @@ nav a {
   color: white !important;
 }
 
-li {
+.nav-item {
   .router-link-exact-active {
     color: rgb(20, 109, 20) !important;
     background-color: white;

@@ -22,4 +22,6 @@ Route::get("/posts", "PostController@index");
 Route::get("/posts/{id}", "PostController@show");
 
 Route::get("/categories", "CategoryController@index");
-Route::get("/tags", "TagController@index");
+Route::get("/categories/{category}", "CategoryController@show");
+
+// Route::get("/tags", "TagController@index");
