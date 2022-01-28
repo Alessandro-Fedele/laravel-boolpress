@@ -30,9 +30,23 @@
         <!-- SIDEBAR -->
         <div class="col-4 d-flex flex-column text-center">
           <!-- Categories -->
-          <div>cat</div>
+          <div class="mb-3">
+            <h5>Categorie:</h5>
+            <ul class="linksList">
+              <li v-for="category of categoriesList" :key="category.id">
+                <router-link to="/">{{ category.name }}</router-link>
+              </li>
+            </ul>
+          </div>
           <!-- Tags -->
-          <div>tags</div>
+          <div>
+            <h5>Tags:</h5>
+            <ul class="linksList">
+              <li v-for="tag of tagsList" :key="tag.id">
+                <router-link to="/">{{ tag.name }}</router-link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- PAGINATION -->
@@ -75,6 +89,8 @@ export default {
     return {
       title: "Vue page",
       postsList: [],
+      categoriesList: [],
+      tagsList: [],
       currentPage: 1,
       lastPage: null,
     };
@@ -87,16 +103,30 @@ export default {
         this.lastPage = resp.data.last_page;
       });
     },
+    getCategories() {
+      window.axios.get("api/categories").then((resp) => {
+        this.categoriesList = resp.data;
+      });
+    },
+    getTags() {
+      window.axios.get("api/tags").then((resp) => {
+        this.tagsList = resp.data;
+      });
+    },
   },
   mounted() {
-    // window.axios.get("/api/posts").then((resp) => {
-    //   this.postsList = resp.data.data;
-    //   this.currentPage = resp.data.current_page;
-    //   this.lastPage = resp.data.last_page;
-    // });
     this.postData();
+    this.getCategories();
+    this.getTags();
   },
 };
 </script>
-<style lang="sass">
+<style lang="scss">
+.linksList {
+  padding: 0;
+  li {
+    list-style: none;
+    padding-bottom: 4px;
+  }
+}
 </style>
