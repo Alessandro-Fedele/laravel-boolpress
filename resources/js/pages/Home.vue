@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- MAIN -->
-    <div class="container mb-5">
+    <div class="container my-5">
       <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="col-8">
           <div v-for="post in postsList" :key="post.id" class="card mt-4 mb-5">
             <router-link :to="{ name: 'posts.show', params: { id: post.id } }">
               <h2>{{ post.title }}</h2>
@@ -26,6 +26,13 @@
               </small>
             </div>
           </div>
+        </div>
+        <!-- SIDEBAR -->
+        <div class="col-4 d-flex flex-column text-center">
+          <!-- Categories -->
+          <div>cat</div>
+          <!-- Tags -->
+          <div>tags</div>
         </div>
       </div>
       <!-- PAGINATION -->

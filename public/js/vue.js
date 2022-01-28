@@ -349,6 +349,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1739,7 +1746,7 @@ var render = function () {
   return _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
     _c(
       "div",
-      { staticClass: "container px-4 px-lg-5" },
+      { staticClass: "container" },
       [
         _c("router-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
           _vm._v("Laravel Blog"),
@@ -1902,11 +1909,11 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container mb-5" }, [
+    _c("div", { staticClass: "container my-5" }, [
       _c("div", { staticClass: "row justify-content-center" }, [
         _c(
           "div",
-          { staticClass: "col-md-10 col-lg-8 col-xl-7" },
+          { staticClass: "col-8" },
           _vm._l(_vm.postsList, function (post) {
             return _c(
               "div",
@@ -1963,6 +1970,8 @@ var render = function () {
           }),
           0
         ),
+        _vm._v(" "),
+        _vm._m(0),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
@@ -2041,7 +2050,18 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-4 d-flex flex-column text-center" }, [
+      _c("div", [_vm._v("cat")]),
+      _vm._v(" "),
+      _c("div", [_vm._v("tags")]),
+    ])
+  },
+]
 render._withStripped = true
 
 

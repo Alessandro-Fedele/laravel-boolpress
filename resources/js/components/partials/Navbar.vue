@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container px-4 px-lg-5">
+    <div class="container">
       <router-link class="navbar-brand" to="/">Laravel Blog</router-link>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto py-4 py-lg-0">
