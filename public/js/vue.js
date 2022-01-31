@@ -2118,7 +2118,9 @@ var render = function () {
                   [_c("h2", [_vm._v(_vm._s(post.title))])]
                 ),
                 _vm._v(" "),
-                _c("img", { attrs: { src: post.image, alt: post.title } }),
+                _c("img", {
+                  attrs: { src: "/storage/" + post.image, alt: post.title },
+                }),
                 _vm._v(" "),
                 _c("p", [_vm._v(_vm._s(post.body))]),
                 _vm._v(" "),
@@ -2359,7 +2361,7 @@ var render = function () {
   return _c("div", { staticClass: "container text-center my-5" }, [
     _c("img", {
       staticClass: "w-100",
-      attrs: { src: _vm.post.image, alt: _vm.post.title },
+      attrs: { src: "/storage/" + _vm.post.image, alt: _vm.post.title },
     }),
     _vm._v(" "),
     _c("h1", [_vm._v(_vm._s(_vm.post.title))]),

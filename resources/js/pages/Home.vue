@@ -8,7 +8,7 @@
             <router-link :to="{ name: 'posts.show', params: { id: post.id } }">
               <h2>{{ post.title }}</h2>
             </router-link>
-            <img :src="post.image" :alt="post.title" />
+            <img :src="'/storage/' + post.image" :alt="post.title" />
             <p>{{ post.body }}</p>
             <p>Categoria: {{ post.category.name }}</p>
             <p>

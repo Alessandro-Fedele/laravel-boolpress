@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center my-5">
-    <img class="w-100" :src="post.image" :alt="post.title" />
+    <img class="w-100" :src="'/storage/' + post.image" :alt="post.title" />
     <h1>{{ post.title }}</h1>
     <p>{{ post.body }}</p>
   </div>
