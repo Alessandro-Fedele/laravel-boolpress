@@ -25,3 +25,5 @@ Route::get("/categories", "CategoryController@index");
 Route::get("/categories/{category}", "CategoryController@show");
 
 // Route::get("/tags", "TagController@index");
+
+Route::post("/contacts", "ContactController@store");

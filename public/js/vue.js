@@ -268,19 +268,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Contact.vue?vue&type=script&lang=js& ***!
   \*************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\resources\\js\\pages\\Contact.vue: Unexpected token (52:2)\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mformSubmitted \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m   }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\n    at Parser._raise (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:569:17)\n    at Parser.raiseWithData (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:562:17)\n    at Parser.raise (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:523:17)\n    at Parser.unexpected (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:3601:16)\n    at Parser.parseExprAtom (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12104:22)\n    at Parser.parseExprSubscripts (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11658:23)\n    at Parser.parseUpdate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11638:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11613:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11425:61)\n    at Parser.parseExprOps (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11432:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11402:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11362:21)\n    at C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11320:39\n    at Parser.allowInAnd (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13236:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11320:17)\n    at Parser.parseExprListItem (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12967:18)\n    at Parser.parseCallExpressionArguments (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11868:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11775:29)\n    at Parser.parseSubscript (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11706:19)\n    at Parser.parseSubscripts (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11675:19)\n    at Parser.parseExprSubscripts (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11664:17)\n    at Parser.parseUpdate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11638:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11613:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11425:61)\n    at Parser.parseExprOps (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11432:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11402:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11362:21)\n    at Parser.parseExpressionBase (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11298:23)\n    at C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11292:39\n    at Parser.allowInAnd (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13230:16)\n    at Parser.parseExpression (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11292:17)\n    at Parser.parseStatementContent (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13658:23)\n    at Parser.parseStatement (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13525:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14114:25)\n    at Parser.parseBlockBody (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14105:10)\n    at Parser.parseBlock (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14089:10)");
 
 /***/ }),
 
@@ -2058,24 +2048,122 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container text-center my-5" }, [
+    _c("h1", [_vm._v("CHI SIAMO")]),
+    _vm._v(" "),
+    _c("h3", [_vm._v("blog@bool.it")]),
+    _vm._v(" "),
+    _c("h3", [_vm._v("+23 4493854")]),
+    _vm._v(" "),
+    _c("h3", [_vm._v("Frews Blv, 142, Toronto")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container text-center my-5" }, [
+      _c("h1", [_vm._v("Contattami")]),
+      _vm._v(" "),
+      !_vm.formSubmitted
+        ? _c(
+            "form",
+            {
+              on: {
+                submit: function ($event) {
+                  $event.preventDefault()
+                  return _vm.onSubmit.apply(null, arguments)
+                },
+              },
+            },
+            [
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "form-label" }, [_vm._v("Nome")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.name,
+                      expression: "form.name",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.form.name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "name", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "form-label" }, [_vm._v("E-mail")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.email,
+                      expression: "form.email",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.form.email },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "email", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c("label", { staticClass: "form-label" }, [
+                  _vm._v("Messaggio"),
+                ]),
+                _vm._v(" "),
+                _c("textarea", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.message,
+                      expression: "form.message",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.form.message },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "message", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn btn-success" }, [
+                _vm._v("INVIA"),
+              ]),
+            ]
+          )
+        : _c("div", { staticClass: "alert alert-success" }, [
+            _vm._v("\n      Grazie! Risponderemo presto alla sua email!\n    "),
+          ]),
+    ]),
+  ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container text-center my-5" }, [
-      _c("h1", [_vm._v("CHI SIAMO")]),
-      _vm._v(" "),
-      _c("h3", [_vm._v("blog@bool.it")]),
-      _vm._v(" "),
-      _c("h3", [_vm._v("+23 4493854")]),
-      _vm._v(" "),
-      _c("h3", [_vm._v("Frews Blv, 142, Toronto")]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
