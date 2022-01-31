@@ -13,8 +13,8 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="image" class="form-label">Immagine</label>
-                    <input type="url" class="form-control" id="image" name="image" value="{{ $post->image }}" placeholder="Change URL... ">
+                    <label class="form-label">Immagine</label>
+                    <input type="file" class="form-control" name="image" required>
                 </div>
 
                 <div class="mb-3">

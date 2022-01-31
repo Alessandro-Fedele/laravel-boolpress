@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -51,6 +52,11 @@ class PostController extends Controller
         $post = new Post();
         $post->fill($request->all());
         $post->user_id = Auth::user()->id;
+
+        // $post->image = Storage::put("posts", $data["image"]);
+        if ($request->file("image")) {
+            $post->image = Storage::put("posts", $data["image"]);
+        }
 
         $post->save();
 
@@ -97,8 +103,27 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+
+        // dump($request->all());
+        // return;
+
+        // dd($request->file());
+
         $data = $request->all();
+        $oldImage = $post->image;
+
         $post->update($data);
+
+        $post->image = Storage::put("posts", $data["image"]);
+        if ($request->file("image")) {
+            if ($oldImage) {
+                Storage::delete($oldImage);
+            }
+
+            $post->image = $request->file("image")->store("posts");
+        }
+
+        $post->save();
 
         // sync cancella in automatico i tag che già esistono e mette quelli nuovi
         $post->tags()->sync($data["tags"]);

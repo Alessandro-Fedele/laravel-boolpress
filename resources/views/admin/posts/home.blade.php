@@ -27,7 +27,7 @@
                     @foreach ($posts as $post)
                     <div class="card mt-4">
                         <h2><a href="{{route('admin.posts.show', $post->id)}}"> {{$post->title}}</a></h2>
-                        <img src="{{$post->image}}" alt="{{$post->title}}">
+                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{$post->title}}">
                         <p>{{$post->body}}</p>
                         <p>Categoria: {{$post->category->name}}</p>
                         <!-- tags -->
