@@ -198,6 +198,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -1969,6 +1972,8 @@ var render = function () {
               ],
               1
             ),
+            _vm._v(" "),
+            _vm._m(0),
           ]),
         ]),
       ],
@@ -1976,7 +1981,23 @@ var render = function () {
     ),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "nav-item" }, [
+      _c(
+        "a",
+        {
+          staticClass: "nav-link px-lg-3 py-3 py-lg-4",
+          attrs: { href: "/login" },
+        },
+        [_vm._v(" Login ")]
+      ),
+    ])
+  },
+]
 render._withStripped = true
 
 

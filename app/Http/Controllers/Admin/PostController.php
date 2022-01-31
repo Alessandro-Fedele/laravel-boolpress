@@ -112,9 +112,11 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($id)
     {
+        $post = Post::where("id", $id)->first();
+        $post->tags()->detach();
         $post->delete();
-        return redirect()->route('admin.posts.index');
+        return redirect()->route('admin.posts.index')->with(["status" => "Post cancellato correttamente"]);
     }
 }
