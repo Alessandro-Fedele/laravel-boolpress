@@ -268,9 +268,65 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Contact.vue?vue&type=script&lang=js& ***!
   \*************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\resources\\js\\pages\\Contact.vue: Unexpected token (52:2)\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mformSubmitted \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m   }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\n    at Parser._raise (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:569:17)\n    at Parser.raiseWithData (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:562:17)\n    at Parser.raise (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:523:17)\n    at Parser.unexpected (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:3601:16)\n    at Parser.parseExprAtom (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12104:22)\n    at Parser.parseExprSubscripts (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11658:23)\n    at Parser.parseUpdate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11638:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11613:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11425:61)\n    at Parser.parseExprOps (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11432:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11402:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11362:21)\n    at C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11320:39\n    at Parser.allowInAnd (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13236:12)\n    at Parser.parseMaybeAssignAllowIn (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11320:17)\n    at Parser.parseExprListItem (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:12967:18)\n    at Parser.parseCallExpressionArguments (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11868:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11775:29)\n    at Parser.parseSubscript (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11706:19)\n    at Parser.parseSubscripts (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11675:19)\n    at Parser.parseExprSubscripts (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11664:17)\n    at Parser.parseUpdate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11638:21)\n    at Parser.parseMaybeUnary (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11613:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11425:61)\n    at Parser.parseExprOps (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11432:23)\n    at Parser.parseMaybeConditional (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11402:23)\n    at Parser.parseMaybeAssign (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11362:21)\n    at Parser.parseExpressionBase (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11298:23)\n    at C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11292:39\n    at Parser.allowInAnd (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13230:16)\n    at Parser.parseExpression (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:11292:17)\n    at Parser.parseStatementContent (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13658:23)\n    at Parser.parseStatement (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:13525:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14114:25)\n    at Parser.parseBlockBody (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14105:10)\n    at Parser.parseBlock (C:\\Users\\Alessandro\\Desktop\\Boolean\\laravel-boolpress\\node_modules\\@babel\\parser\\lib\\index.js:14089:10)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      formSubmitted: false,
+      form: {
+        name: "",
+        email: "",
+        message: ""
+      }
+    };
+  },
+  methods: {
+    onSubmit: function onSubmit() {
+      var _this = this;
+
+      window.axios.post("/api/contacts", this.form).then(function (resp) {
+        _this.formSubmitted = true;
+      });
+    }
+  }
+});
 
 /***/ }),
 
